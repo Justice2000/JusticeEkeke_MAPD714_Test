@@ -6,7 +6,7 @@
  *Program Name: Shopping List Application
  *Date Last Modified: 30/10/2021
  *Description: A simple shopping list app to create a shoppinglist as well as manipulate it's item quantity using steppers.
- *Revision History: Added GUI content
+ *Revision History: Added functionality to steppers as well as a launch screen
  *Author: Justice Ekeke
  *Student ID: 301160908
  *Date: 30/10/2021.

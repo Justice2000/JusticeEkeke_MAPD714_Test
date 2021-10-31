@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var stepperlbl3: UILabel!
     @IBOutlet weak var stepperlbl4: UILabel!
     @IBOutlet weak var stepperlbl5: UILabel!
+    @IBOutlet weak var stepperlblnew: UILabel!
     @IBOutlet weak var listname_et: UITextField!
     @IBOutlet weak var listname_tv: UILabel!
     @IBOutlet weak var item1: UITextField!
@@ -29,11 +30,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var item3: UITextField!
     @IBOutlet weak var item4: UITextField!
     @IBOutlet weak var item5: UITextField!
+    @IBOutlet weak var newitem: UITextField!
     @IBOutlet weak var stepper1: UIStepper!
     @IBOutlet weak var stepper2: UIStepper!
     @IBOutlet weak var stepper3: UIStepper!
     @IBOutlet weak var stepper4: UIStepper!
     @IBOutlet weak var stepper5: UIStepper!
+    @IBOutlet weak var steppernew: UIStepper!
     @IBOutlet weak var comments: UITextView!
     
     
@@ -70,6 +73,11 @@ class ViewController: UIViewController {
         //linking the stepper to the outputlabel
         stepperlbl5.text = String(Int(sender.value))
     }
+    @IBAction func steppernewcl(_ sender: UIStepper)
+    {
+        //linking the stepper to the outputlabel
+        stepperlblnew.text = String(Int(sender.value))
+    }
     
     //Function for adding list name
     @IBAction func addlistname(_ sender: UIButton)
@@ -88,6 +96,7 @@ class ViewController: UIViewController {
         item3.text = ""
         item4.text = ""
         item5.text = ""
+        newitem.text = ""
         stepper1.value = 0
         stepperlbl1.text = "0"
         stepper2.value = 0
@@ -98,6 +107,8 @@ class ViewController: UIViewController {
         stepperlbl4.text = "0"
         stepper5.value = 0
         stepperlbl5.text = "0"
+        steppernew.value = 0
+        stepperlblnew.text = "0"
         comments.text = ""
         
     }
